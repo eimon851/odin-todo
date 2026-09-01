@@ -1,10 +1,40 @@
+html {
+    height: 100%;
+}
 body {
-    background-color: lightblue
+    background-color: lightblue;
+    margin: 0;
+    min-height: 100%;
 }
 
 .main-container {
     display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px;
+    grid-template-columns: 153px 153px 153px;
+    grid-template-rows: 112px 1010px;
+}
 
+.item {
+    border: 1px solid;
+    text-align: center;
+} 
+
+#header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#content {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
