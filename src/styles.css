@@ -9,8 +9,11 @@ body {
 
 .main-container {
     display: grid;
-    grid-template-columns: 153px 153px 153px;
-    grid-template-rows: 112px 1010px;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "sidebar content";
+    grid-template-columns: 1fr 3fr;
 }
 
 .item {
