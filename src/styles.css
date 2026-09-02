@@ -18,26 +18,26 @@ body {
 
 .item {
     border: 1px solid;
-    text-align: center;
 } 
 
+ul {
+    padding-left: 10px;
+}
+
 #header {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-area: header;
+    font-size: 30px;
+    padding: 10px;
 }
 
 #sidebar {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-area: sidebar;
 }
 
+#sidebar .due-date-container {
+    display: flex;
+    gap: 10px;
+}
 #content {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-area: content
 }
